@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://pushsecurity.com/help/audience/engineering/rest-v1
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://pushsecurity.com/help/audience/engineering/rest-v1
+status_page: https://status.pushsecurity.com/
+deprecation: {}   # no public deprecation / Sunset-header policy located in this pass
+sla: {}
+notes: >-
+  REST API is versioned in the URI path (v1). A public status page is published
+  at status.pushsecurity.com. No dated public API changelog or formal deprecation
+  policy was located during enrichment.

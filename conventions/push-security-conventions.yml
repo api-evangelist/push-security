@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://pushsecurity.com/help/audience/engineering/rest-v1
+authentication:
+  style: api-token
+  transport: header
+  ref: authentication/push-security-authentication.yml
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/push-security-lifecycle.yml
+api:
+  base: https://api.pushsecurity.com
+  protocol: REST/JSON
+  purpose: Programmatically administer the Push platform (accounts, apps, findings, integrations).
+events:
+  webhooks: true
+  description: >-
+    Push emits webhooks for real-time platform events, and can forward the same
+    event stream to SIEM/SOAR and ticketing systems.
+  ref: asyncapi/push-security-webhooks.yml
+idempotency: {}   # no documented idempotency-key contract located
+pagination: {}    # not captured verbatim (REST v1 reference is JS-rendered)
+error_envelope:
+  observed: '{"message": "..."}'   # e.g. unauthenticated host returns {"message":"Missing Authentication Token"}
+notes: >-
+  Cross-cutting semantics captured from public docs. The full REST v1 reference
+  is JavaScript-rendered and hosts endpoint/pagination/error detail behind the
+  admin console; only publicly verifiable conventions are recorded here — no
+  values were fabricated.

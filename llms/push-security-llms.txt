@@ -1,0 +1,60 @@
+# Push Security
+
+> Push Security is the most powerful AI-native security tool in the browser — a secure enterprise browser extension built for the AI era. Combining real-time telemetry, autonomous agents, and deep browser visibility, Push stops advanced identity attacks, provides AI visibility and control, hardens identity attack surfaces, and enables insider threat investigations — all from your users' existing browsers, no migration required.
+
+Push deploys as a lightweight browser extension to every employee. From the browser, Push tracks every login, every AI tool interaction, every identity event, and every attack as it happens — giving security teams high-fidelity visibility and real-time control across the full identity and browser attack surface.
+
+Push's autonomous AI agents, continuously hunt for threats across all deployed browser extensions by running Lucene-based queries against a local event database stored inside each browser. When it uncovers an attack pattern, it autonomously writes detection scripts and deploys them down to the extension, creating a self-improving feedback loop between threat discovery and real-time blocking, making it genuinely AI-native.
+
+**Supported browsers:** Supports all common browsers (Chromium-based, Firefox, Safari, Opera) — including AI and enterprise browsers.
+
+This file is intended for LLMs and AI agents that want a map of the most useful, human-readable pages on pushsecurity.com. Content under `/app/` is the authenticated product and is disallowed for crawling.
+
+## Product
+
+- [Product overview](https://pushsecurity.com/product): How the Push platform works end-to-end.
+- [Product demo](https://pushsecurity.com/product-demo): Interactive walkthrough of the product.
+- [Pricing](https://pushsecurity.com/pricing): Plans and pricing.
+- [Book a demo](https://pushsecurity.com/demo): Request a live demo with the Push team.
+
+## Use cases
+
+- [Account takeover detection](https://pushsecurity.com/solution/achieve-security-outcomes/stop-account-takeover): Detect and stop account takeover attempts in real time using browser-level signals.
+- [Zero-day phishing protection](https://pushsecurity.com/solution/stop-browser-based-attacks/zero-day-phishing): Block phishing attacks at the browser before credentials are entered.
+- [ClickFix protection](https://pushsecurity.com/solution/stop-browser-based-attacks/clickfix-fix-variants): Detect and block ClickFix social engineering attacks targeting employees.
+- [Incident response](https://pushsecurity.com/solution/achieve-security-outcomes/investigate-browser-related-incidents): Accelerate identity incident response with high-fidelity browser telemetry.
+- [Shadow AI](https://pushsecurity.com/solution/achieve-security-outcomes/secure-ai): Discover and control unsanctioned AI tools employees are using.
+- [Shadow SaaS](https://pushsecurity.com/solution/achieve-security-outcomes/secure-shadow-saas): Find every SaaS app in use across your organisation, including those outside IT control.
+- [Attack path hardening](https://pushsecurity.com/solution/achieve-security-outcomes/harden-unmanaged-identities): Identify and close the identity-based attack paths attackers exploit most.
+- [Browser extension security](https://pushsecurity.com/solution/stop-browser-based-attacks/malicious-browser-extensions): Detect risky or malicious browser extensions across your fleet.
+
+## Research and learning
+
+- [Blog](https://pushsecurity.com/blog): Product updates, engineering posts, and identity attack research.
+- [Browser Identity Attacks Matrix](https://pushsecurity.com/resources/browser-identity-attacks-matrix): A research-led matrix of browser-based identity attack techniques.
+- [Resources](https://pushsecurity.com/resources): Reports, guides, videos, and ebooks.
+- [Customer stories](https://pushsecurity.com/customer-stories): How teams use Push in production.
+- [Events](https://pushsecurity.com/events): Upcoming conferences and events.
+- [News](https://pushsecurity.com/news): Press and company news.
+- [FAQ](https://pushsecurity.com/faq): Frequently asked questions about Push.
+- [Help center](https://pushsecurity.com/help): Technical documentation and help articles.
+
+## Company
+
+- [About Push](https://pushsecurity.com/about): Who we are and why we build Push.
+- [Contact](https://pushsecurity.com/contact): Get in touch.
+- [Partners](https://pushsecurity.com/partner): Partner program and integrations.
+- [Newsletter](https://pushsecurity.com/newsletter): Subscribe to our newsletter.
+
+## Legal
+
+- [Privacy policy](https://pushsecurity.com/legal/privacy)
+- [Terms](https://pushsecurity.com/legal/terms)
+- [Cookies](https://pushsecurity.com/legal/cookies)
+- [Data processing agreement](https://pushsecurity.com/legal/processing)
+- [Subprocessors](https://pushsecurity.com/legal/subprocessors)
+
+## Machine-readable
+
+- [Sitemap](https://pushsecurity.com/sitemap.xml)
+- [Robots](https://pushsecurity.com/robots.txt)

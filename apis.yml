@@ -1,8 +1,17 @@
 aid: push-security
 name: Push Security
-description: 'Push Security is a company surfaced as a portfolio company of gv, redpoint-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Push Security is an AI-native browser security platform that deploys as a
+  lightweight enterprise browser extension to every employee, giving security
+  teams real-time telemetry, autonomous threat-hunting agents, and deep browser
+  visibility across the full identity and browser attack surface. From the
+  browser, Push tracks logins, AI-tool usage, and identity events to stop
+  advanced identity attacks (account takeover, zero-day phishing, ClickFix,
+  malicious OAuth integrations, session hijacking), discover shadow AI and shadow
+  SaaS, harden unmanaged identities, and accelerate incident response. Push
+  exposes a REST API (v1) and webhooks to programmatically administer the
+  platform and forward events to SIEM/SOAR and ticketing systems. Backed by GV
+  and Redpoint Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/push-security/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +20,52 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://pushsecurity.com/favicon.ico
 tags:
 - Company
 - Enterprise
-apis: []
+- Security
+- Identity
+- Browser Security
+- SaaS Security
+- Cybersecurity
+- Threat Detection
+- SIEM
+apis:
+- name: Push Security REST API v1
+  description: >-
+    REST/JSON API to programmatically administer the Push platform (accounts,
+    apps, findings, integrations) plus webhooks for real-time platform events.
+  humanURL: https://pushsecurity.com/help/audience/engineering/rest-v1
+  baseURL: https://api.pushsecurity.com
+  properties:
+  - type: Documentation
+    url: https://pushsecurity.com/help/audience/engineering/rest-v1
+  - type: APIReference
+    url: https://pushsecurity.com/help/audience/engineering/rest-v1
+  - type: Authentication
+    url: authentication/push-security-authentication.yml
+  - type: Webhooks
+    url: asyncapi/push-security-webhooks.yml
+  - type: Conventions
+    url: conventions/push-security-conventions.yml
+  - type: Lifecycle
+    url: lifecycle/push-security-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +74,60 @@ maintainers:
 common:
 - type: Website
   url: https://pushsecurity.com
+- type: DeveloperPortal
+  url: https://pushsecurity.com/help/audience/engineering/rest-v1
+- type: Documentation
+  url: https://pushsecurity.com/help
+- type: APIReference
+  url: https://pushsecurity.com/help/audience/engineering/rest-v1
+- type: GettingStarted
+  url: https://pushsecurity.com/help/audience/administrators/docs/getting-started
+- type: HelpCenter
+  url: https://pushsecurity.com/help
+- type: Support
+  url: https://pushsecurity.com/contact
+- type: Blog
+  url: https://pushsecurity.com/blog
+- type: Pricing
+  url: https://pushsecurity.com/pricing
+- type: Login
+  url: https://pushsecurity.com/login
+- type: SignUp
+  url: https://pushsecurity.com/demo
+- type: TermsOfService
+  url: https://pushsecurity.com/legal/terms
+- type: PrivacyPolicy
+  url: https://pushsecurity.com/legal/privacy
+- type: GitHubOrganization
+  url: https://github.com/pushsecurity
+- type: StatusPage
+  url: https://status.pushsecurity.com/
+- type: TrustCenter
+  url: security/push-security-trust-center.yml
+- type: Compliance
+  url: https://trust.pushsecurity.com/
+- type: Security
+  url: https://pushsecurity.com/.well-known/security.txt
+- type: LLMsTxt
+  url: llms/push-security-llms.txt
+- type: WellKnown
+  url: well-known/push-security-well-known.yml
+- type: SecurityTxt
+  url: well-known/push-security-security.txt
+- type: Authentication
+  url: authentication/push-security-authentication.yml
+- type: Conventions
+  url: conventions/push-security-conventions.yml
+- type: Lifecycle
+  url: lifecycle/push-security-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/push-security-webhooks.yml
+- type: DomainSecurity
+  url: security/push-security-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/push-security-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

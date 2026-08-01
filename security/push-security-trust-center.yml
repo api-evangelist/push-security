@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://trust.pushsecurity.com/
+url: https://trust.pushsecurity.com/
+certifications:
+- SOC 2 Type II          # audited by Linford & Co LLP, annual review
+- ISO/IEC 27001          # certificate 26983ISMS001, audited by ISOQAR
+- ISO/IEC 27701          # certificate 26983PIM001, audited by ISOQAR
+- GDPR
+- Cyber Essentials       # UK Government-backed scheme, audited by IASME Consortium
+contacts:
+  security: security@pushsecurity.com
+  trust: trust@pushsecurity.com
+  privacy: privacy@pushsecurity.com
+evidence:
+- source: https://trust.pushsecurity.com/
+  keywords:
+  - soc 2 type ii
+  - iso/iec 27001
+  - iso/iec 27701
+  - gdpr
+  - cyber essentials
+  - trust center

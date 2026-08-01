@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://pushsecurity.com/help/audience/engineering/webhooks-v1
+type: Webhooks
+spec_type: null   # no published AsyncAPI document located; webhook surface documented in prose
+surface:
+  webhooks:
+    docs: https://pushsecurity.com/help/audience/engineering/webhooks-v1
+    description: >-
+      Push provides webhooks to support real-time updates for platform events.
+      Webhooks are configured in the Push admin console and deliver event
+      payloads to a subscriber endpoint over HTTPS.
+  delivery:
+    style: http-push
+    format: JSON
+  consumers:
+    docs: https://pushsecurity.com/help/can-i-send-push-data-to-other-systems-like-a-siem-or-ticketing-system
+    siem_soar:
+    - Splunk Cloud
+    - Microsoft Sentinel (Azure Monitor)
+    - Datadog
+    - Cribl Cloud
+    - Panther
+    - SentinelOne
+    - Tines
+    - Slack
+    use_cases:
+    - Forward events to SIEM/SOAR platforms
+    - Create tickets in Jira and similar ticketing systems
+    - Build external automation workflows (e.g. Tines)
+notes: >-
+  Push documents a webhook surface for platform events plus REST-API-based
+  event forwarding to SIEM/SOAR. Individual event-type names are rendered in
+  the JavaScript webhooks-v1 reference and were not captured verbatim; none
+  were invented. Emitted as type Webhooks (no AsyncAPI spec is published).
