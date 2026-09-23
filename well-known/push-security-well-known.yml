@@ -2,25 +2,32 @@ generated: '2026-07-20'
 method: searched
 source: live probes of https://pushsecurity.com/.well-known/ and https://api.pushsecurity.com/.well-known/
 host: https://pushsecurity.com
-documents:
-- path: /.well-known/security.txt          # RFC 9116
-  status: 200
-  file: push-security-security.txt
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
 api_host: https://api.pushsecurity.com
 api_host_documents:
 - path: /.well-known/security.txt
-  status: 403   # host requires authentication ("Missing Authentication Token")
+  status: 403
 - path: /.well-known/openid-configuration
   status: 403
 - path: /.well-known/oauth-authorization-server
   status: 403
 - path: /.well-known/api-catalog
   status: 403
+hosts:
+- host: https://pushsecurity.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: push-security-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
